@@ -30,10 +30,19 @@
   height: 80vh;
   width: 90%;
   padding: 50px;
+  gap: 0;
+}
+
+.divColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 3px;
 }
 
 .sketchPixel {
   background-color: white; 
-  border: 1px solid gray; 
-  flex: 1;
+
+  width: 48px;
+  height: 48px;
 }
