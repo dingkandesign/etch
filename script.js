@@ -1,7 +1,4 @@
-const sketch = document.querySelector('.sketch');
-
-
-
+//functions
 function createGrid(n) {
   for (let i = 1; i <= n; i++) {
     const divColumn = document.createElement('div');
@@ -21,14 +18,18 @@ function createGrid(n) {
   }
 }
 
+const sketch = document.querySelector('.sketch');
+
 createGrid(16);
 
+// must come after createGrid so there actually are sketchPixels
 const pixels = document.querySelectorAll('.sketchPixel');
+
+// highlight the mouseover target
 pixels.forEach((pixel) => {
   pixel.addEventListener(
     "mouseover",
     (event) => {
-      // highlight the mouseover target
       event.target.style.backgroundColor = "black";
     },
     false,

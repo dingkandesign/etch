@@ -26,23 +26,22 @@
 
 .sketch {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 80vh;
   width: 90%;
   padding: 50px;
-  gap: 0;
+  gap: 1px;
 }
 
 .divColumn {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  gap: 3px;
+  justify-content: center;
+  gap: 1px;
 }
 
 .sketchPixel {
   background-color: white; 
-
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
 }
